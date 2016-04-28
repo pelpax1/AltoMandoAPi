@@ -1,0 +1,19 @@
+#language setting
+language: node_js
+
+# version numbers
+node_js:
+  - "0.10"
+
+env:
+  global:
+    - OPENSHIFT_REPO=ssh://572297737628e14b9e00010e@altomando-lololo24.rhcloud.com/~/git/altomando.git/
+    
+before_install:
+  - git remote -v | grep ^openshift || git remote add -m master openshift $OPENSHIFT_REPO
+
+after_success:
+  - git push -f openshift $BRANCH:master
+
+install:
+  - npm install
