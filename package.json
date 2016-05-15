@@ -8,7 +8,7 @@
     "start": "node server.js",
     "test": "grunt test",
     "build": "grunt build",
-    "all": "npm run build && npm run test"
+    "all": "npm run build"
   },
   "dependencies": {
     "construx": "^1.0.0",
