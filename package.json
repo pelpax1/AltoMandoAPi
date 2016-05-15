@@ -6,7 +6,6 @@
   "main": "index.js",
   "scripts": {
     "start": "node server.js",
-    "test": "grunt test",
     "build": "grunt build",
     "all": "npm run build"
   },
@@ -24,10 +23,8 @@
     "grunt-config-dir": "^0.3.2",
     "grunt-contrib-clean": "^0.6.0",
     "grunt-copy-to": "0.0.10",
-    "grunt-eslint": "^17.3.2",
     "grunt-mocha-cli": "^1.14.0",
     "mocha": "^1.18.0",
-    "supertest": "^0.9.0",
     "grunt-copy-browser-modules": "*"
   }
 }
